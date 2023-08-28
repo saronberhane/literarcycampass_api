@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+
+    <!-- icon at the tab of page -->
+    <link rel="icon" type="images/x-icon" href="/Images/logo/BlogLogo1.png" />
+
+    <!-- linking the styles css page to this -->
+    <link rel="stylesheet" href="/views/styles/styles.css" />
+    <link rel="stylesheet" href="/views/styles/commonStyles.css" />
+
+    <!-- linking the responsive css page to this -->
+    <link rel="stylesheet" href="/views/styles/responsive.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- connecting the javascript -->
+    <script src="script.js"></script>
+
+    <!-- Include Mustache JS framework -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js"></script>
+  </head>
+  <body>
+     <!-- Start: Nav-bar -->
+     <header class="header">
+      <div class="header">
+          <div class="logo"> 
+              <a href="/views/html/index.html"><img src="/Images/logo/BlogLogo1.png" alt="logo"></a>    
+          </div>
+
+          <nav class="primary-nav">
+              <ul class="nav-menu">
+                  <li class="nav-item"><a href="/views/html/index.html"> Home </a></li>
+                  <li class="nav-item"><a href="/views/html/about.html"> About </a></li>
+                  <li class="nav-item"><a href="/views/html/contact.html">Contact </a> </li>
+                  <li class="nav-item"><a href="/views/html/review.html"> Review </a></li>
+                  <li class="nav-item"><a href="/views/html/login.html"> Login </a></li>
+                  <a> 
+                      <form class="search" role="search">
+                          <label>
+                              <input type="search"/>
+                          </label>
+                          <button type="submit">Submit</button>
+                      </form>
+                  </a>    
+              </ul>  
+
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+          </nav>   
+      </div>
+  </header>
+<!-- End: Nav-bar -->
+
+    <!-- start: Review  -->
+    <div id="bookreview1">
+      <div class="author-container">
+        <h1>Book Review</h1>
+        <div class="bookReview">
+          <img src="/Images/book1.png" class="blog-img" />
+          <div class="title-rating">
+            <h2>The Thing Beneath The Thing</h2>
+            <div class="reviewrate">
+              <p>Rating:</p>
+              <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+              </div>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum
+            is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the
+            1500s, when an unknown printer took a galley of type and scrambled
+            it to make a type specimen book. It has survived not only five
+            centuries, but also the leap into electronic typesetting, remaining
+            essentially unchanged. It was popularised in the 1960s with the
+            release of Letraset sheets containing Lorem Ipsum passages, and more
+            recently with desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsum.Nulla accumsan rhoncus nisi, ac
+            varius ex dignissim non. Vivamus non dapibus purus. Sed iaculis
+            tristique lacus, quis aliquam libero.
+          </p>
+        </div>
+      </div>
+
+      <div class="rank-container">
+        <div class="inner">
+          <div class="rating">
+            <span class="rating-num">4.0</span>
+            <div class="rating-stars">
+              <span><i class="active icon-star"></i></span>
+              <span><i class="active icon-star"></i></span>
+              <span><i class="active icon-star"></i></span>
+              <span><i class="active icon-star"></i></span>
+              <span><i class="icon-star"></i></span>
+            </div>
+            <div class="rating-users">
+              <i class="icon-user"></i> 1,014,004 total
+            </div>
+          </div>
+
+          <div class="histo">
+            <div class="five histo-rate">
+              <span class="histo-star">
+                <i class="active icon-star"></i> 5
+              </span>
+              <span class="bar-block">
+                <span id="bar-five" class="bar">
+                  <span>566,784</span>&nbsp;
+                </span>
+              </span>
+            </div>
+
+            <div class="four histo-rate">
+              <span class="histo-star">
+                <i class="active icon-star"></i> 4
+              </span>
+              <span class="bar-block">
+                <span id="bar-four" class="bar">
+                  <span>171,298</span>&nbsp;
+                </span>
+              </span>
+            </div>
+
+            <div class="three histo-rate">
+              <span class="histo-star">
+                <i class="active icon-star"></i> 3
+              </span>
+              <span class="bar-block">
+                <span id="bar-three" class="bar">
+                  <span>94,940</span>&nbsp;
+                </span>
+              </span>
+            </div>
+
+            <div class="two histo-rate">
+              <span class="histo-star">
+                <i class="active icon-star"></i> 2
+              </span>
+              <span class="bar-block">
+                <span id="bar-two" class="bar">
+                  <span>44,525</span>&nbsp;
+                </span>
+              </span>
+            </div>
+
+            <div class="one histo-rate">
+              <span class="histo-star">
+                <i class="active icon-star"></i> 1
+              </span>
+              <span class="bar-block">
+                <span id="bar-one" class="bar">
+                  <span>136,457</span>&nbsp;
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="communityComment">
+        <div class="commentTitle">
+          <h1>Community Comment</h1>
+        </div>
+
+        <div class="comment-section">
+          <div class="comment">
+            <img
+              src="/Images/avatars/person4.jpg"
+              alt="User 1"
+              class="user-pic"
+            />
+            <div class="comment-content">
+              <h3>Sandra Simon</h3>
+              <p>
+                This is my comment. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Quisque consequat mi et lacus egestas bibendum.
+                Donec blandit nisi eu turpis interdum, eget suscipit nibh
+                semper. Sed ut urna commodo, commodo enim vel, sodales est.
+                Integer quis libero ut lorem commodo aliquam vitae nec sem.
+                Morbi eget sagittis velit.
+              </p>
+            </div>
+          </div>
+          <div class="comment">
+            <img
+              src="/Images/avatars/person2.jpg"
+              alt="User 2"
+              class="user-pic"
+            />
+            <div class="comment-content">
+              <h3>Ben Thomas</h3>
+              <p>
+                This is my comment. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Quisque consequat mi et lacus egestas bibendum.
+                Donec blandit nisi eu turpis interdum, eget suscipit nibh
+                semper. Sed ut urna commodo, commodo enim vel, sodales est.
+                Integer quis libero ut lorem commodo aliquam vitae nec sem.
+                Morbi eget sagittis velit.
+              </p>
+            </div>
+          </div>
+          <div class="comment">
+            <img
+              src="/Images/avatars/person1.jpg"
+              alt="User 3"
+              class="user-pic"
+            />
+            <div class="comment-content">
+              <h3>Josh Brown</h3>
+              <p>
+                This is my comment. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Quisque consequat mi et lacus egestas bibendum.
+                Donec blandit nisi eu turpis interdum, eget suscipit nibh
+                semper. Sed ut urna commodo, commodo enim vel, sodales est.
+                Integer quis libero ut lorem commodo aliquam vitae nec sem.
+                Morbi eget sagittis velit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- End: Review  -->
+
+
+    <!-- Start: Footer -->
+    <footer class="foot">
+      <hr />
+      <br />
+      <br />
+      <div class="footer">
+        <div class="info">
+          <h4>saronberhanee@gmail.com</h4>
+          <h4>(832) 863-4085</h4>
+        </div>
+        <ul class="social">
+          <li>
+            <a href="tel:8328634085"><i class="fa fa-phone"></i></a>
+          </li>
+          <li>
+            <a href="mailto:saronberhanee@gmail.com"
+              ><i class="fa fa-envelope"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/saron-berhanee/" target="blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <br />
+      <br />
+      <!-- <hr> -->
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Saron Berhane. All Right Reserved.</p>
+      </div>
+    </footer>
+    <!-- End: Footer -->
+
+    <script src="/views/javascript/script.js"></script>
+  </body>
+</html>

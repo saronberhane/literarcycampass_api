@@ -1,0 +1,562 @@
+/* Start: Home page */
+/* Start: Intro */
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+}
+
+.info {
+  margin-left: 50px;
+}
+
+.description {
+  max-width: 420px;
+  margin-bottom: 20px;
+}
+.description button {
+  float: right;
+}
+
+.info h2 {
+  color: white;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* this is for the image */
+.image {
+  width: 726px;
+  height: 494px;
+  margin-top: 50px;
+}
+
+.image img {
+  width: 726px;
+  height: 494px;
+}
+
+/* this is for the avatar resizing it and putting the na,e next to the image */
+.ab {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.avatar img {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+/* End: Intro */
+
+/* Start: Blogs */
+.blog-grid {
+  display: grid;
+  align-items: center;
+  /* justify-content: center;
+  align-content: center; */
+  grid-template-columns: repeat(3, auto);
+  grid-auto-rows: auto;
+  gap: 10px;
+  margin-top: 5%;
+}
+
+.container-box {
+  padding: 55px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  width: 450px;
+  height: 440px;
+}
+
+.blog-img {
+  display: block;
+  width: 336px;
+  height: 230px;
+}
+
+.container-box h3 {
+  margin-top: 20px;
+  max-width: 300px;
+}
+/* End: Blogs */
+
+/* Start: Subscribe */
+.subscribe {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.subscribe form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.subscribe form h2 {
+  margin-bottom: 10px;
+  max-width: 300px;
+}
+
+.subscribe input[type="email"] {
+  background: rgb(211, 210, 210);
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(122, 120, 120);
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+}
+
+.subscribe input[type="submit"] {
+  color: rgb(248, 244, 244);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+.subscribe input[type="submit"]:hover {
+  background-color: #1b3652;
+}
+/* End: Subscribe */
+/* End: Home Page */
+
+/* Start: About Page */
+.author-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 250px;
+}
+
+.author-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px;
+}
+
+.author img {
+  max-width: 200px;
+  height: auto;
+}
+
+.author h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.author p {
+  font-size: 16px;
+  line-height: 1;
+}
+/* End: About page */
+
+/* Start: Contact Page */
+.post {
+  margin-top: 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 1050px;
+}
+
+.title-pic {
+  margin-top: 50px;
+}
+.blog-text {
+  margin-top: 55px;
+}
+
+textarea {
+  max-width: 750px;
+  background: rgb(211, 210, 210);
+  width: auto;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid rgb(122, 120, 120);
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+  color: rgb(2, 2, 2);
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  height: 500px;
+  border: none;
+}
+/* End: Contact Page */
+
+/* Start: book review page */
+.bookReview {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.bookReview img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.bookReview h2 {
+  margin-bottom: 10px;
+}
+
+.reviewrate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reviewrate p {
+  margin-right: 10px;
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+}
+
+.rate input[type="radio"] {
+  display: none;
+}
+
+.rate label {
+  color: grey;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.rate label:hover,
+.rate input[type="radio"]:checked + label {
+  color: orange;
+}
+
+.bookReview p {
+  margin-bottom: 20px;
+}
+
+.bookReview button {
+  float: right;
+}
+/* End: book review page */
+
+/*  Start: FullBook Review   */
+.rank-container {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 3em;
+  background-color: #4095da;
+  padding: 4px;
+}
+
+.inner {
+  padding: 1em;
+  background-color: #4095da;
+  overflow: hidden;
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.rating {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.rating-num {
+  color: #333333;
+  font-size: 72px;
+  font-weight: 100;
+  line-height: 1em;
+}
+
+.rating-stars {
+  font-size: 20px;
+  color: #e3e3e3;
+  margin-bottom: 0.5em;
+}
+.rating-stars .active {
+  color: #737373;
+}
+
+.rating-users {
+  font-size: 14px;
+}
+
+.histo {
+  float: left;
+  width: 50%;
+  font-size: 13px;
+}
+
+.histo-star {
+  float: left;
+  padding: 3px;
+}
+
+.histo-rate {
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+.bar-block {
+  margin-left: 5px;
+  color: black;
+  display: block;
+  float: left;
+  width: 75%;
+  position: relative;
+}
+
+.bar {
+  padding: 4px;
+  display: block;
+}
+
+#bar-five {
+  width: 70px;
+  background-color: #9fc05a;
+}
+
+#bar-four {
+  width: 30px;
+  background-color: #add633;
+}
+
+#bar-three {
+  width: 50px;
+  background-color: #ffd834;
+}
+
+#bar-two {
+  width: 40px;
+  background-color: #ffb234;
+}
+
+#bar-one {
+  width: 20px;
+  background-color: #ff8b5a;
+}
+
+/* readers comment */
+.commentTitle h1 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment {
+  display: flex;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px 250px;
+}
+
+.comment-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.comment-content {
+  margin: 15px;
+  text-align: center;
+}
+
+.comment-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.comment-text {
+  margin: 0;
+}
+
+.comment-date {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #999;
+}
+/*  End: FullBook Review   */
+
+/* start: login page */
+.account-container {
+  margin: auto;
+  max-width: 500px; /* updated */
+  padding: 50px; /* updated */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 150px; /* updated */
+  margin-bottom: 150px; /* updated */
+}
+
+.account-container h1 {
+  text-align: center;
+}
+
+.account-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-container label {
+  font-weight: bold;
+}
+
+.account-container input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.account-container p {
+  margin-top: 20px;
+  text-align: center;
+}
+/* end:login page */
+
+/* Start: About reviewer  */
+.reviewer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0px 250px;
+  margin-top: 100px;
+}
+
+.reviewer-container h1 {
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container-reviewer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.aboutImage {
+  width: 726px;
+  height: 494px;
+  margin-top: 50px;
+  margin: auto; /* Add this line to center the element horizontally */
+  display: flex; /* Add this line to make the align-items and justify-content properties work */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.box1 h1{
+  margin: 20px;
+  text-align: center;
+}
+
+.box1 p{
+  text-align: center;
+  margin: 0px 250px;
+}
+
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.box h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.box1{
+  padding: 20px;
+  margin: 10px;
+}
+
+.box2{
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 0px 100px;
+  border-radius: 35px
+}
+
+.box2 p{
+  width: 400px;
+}
+.box3{
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 35px
+}
+
+
+
+/* End: About Reviewer */

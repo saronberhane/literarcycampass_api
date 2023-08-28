@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  width: fit-content;
+  background: black;
+  color: rgb(197, 197, 197);
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  width: 100%;
+}
+
+button {
+  background: #4095da;
+  border-radius: 30px;
+  padding: 5px 20px;
+  margin-top: 30px;
+}
+
+button:hover {
+  color: white;
+  background: #1b3652;
+}
+
+.inputs input {
+  background: rgb(211, 210, 210);
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(122, 120, 120);
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+  color: rgb(2, 2, 2);
+  cursor: pointer;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Start: Nav-bar */
+.header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.primary-nav ul {
+  display: flex;
+}
+
+.primary-nav a {
+  margin-right: 50px;
+  line-height: 107px;
+  color: #4095da;
+}
+
+a:hover {
+  color: white;
+}
+
+.logo img {
+  max-width: 33%;
+  height: auto;
+  margin-top: 10px;
+}
+/* End: Nav-bar */
+
+/* Start: Hamburger */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 45px;
+  height: 1px;
+  margin: 10px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #4095da;
+}
+/* End: Hamburger */
+
+/* Start: Star Rate */
+.reviewrate {
+  display: flex;
+  align-items: center;
+}
+
+.reviewrate p {
+  margin-right: 10px;
+}
+
+.reviewrate .rate label {
+  font-size: 20px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.reviewrate .rate input[type="radio"] {
+  display: none;
+}
+
+.reviewrate .rate input[type="radio"]:checked + label {
+  color: #ffcc00;
+}
+
+.title h2 {
+  text-align: center;
+  color: #c59b08;
+}
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+/* End: Star Rate */
+
+/* Start: Footer Section */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.info h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.social {
+  display: flex;
+  margin-top: 10px;
+}
+.social a {
+  padding: 0px 20px;
+  font-size: 30px;
+}
+
+.fab {
+  background: rgb(212, 204, 205);
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  color: black;
+  padding: 10px;
+}
+
+.fa {
+  background: rgb(212, 204, 205);
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  color: black;
+  padding: 10px;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+hr {
+  border-width: 10%;
+  align-items: center;
+  justify-content: center;
+}
+/* End: Footer Section */

@@ -1,0 +1,370 @@
+@media screen and (min-width: 390px) {
+  /* Start: Nav Bar */
+  .header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 390px; /* Set maximum width to 390 pixels*/
+  }
+  /* End: Nav Bar */
+
+  /* Start: Home page */
+  .image {
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .image img {
+    width: 340px;
+    height: 320px;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    flex-direction: row;
+    height: auto;
+    margin-bottom: 100px;
+  }
+
+  .top {
+    display: inline;
+    width: auto;
+    height: auto;
+    margin: 0pc 20px;
+  }
+
+  .info {
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info p {
+    text-align: center;
+  }
+
+  .info h2 {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+  }
+
+  .description {
+    max-width: 330px;
+    margin-bottom: 20px;
+  }
+
+  .container-box {
+    padding-top: 20px;
+    padding: 55px;
+    height: 320px;
+  }
+  .reviewrate {
+    margin-bottom: 40px;
+  }
+  /* End: Home page */
+
+  /* Start: About page */
+  .author-container {
+    margin: 0px;
+  }
+  .author {
+    display: inline;
+  }
+  .blog-img {
+    display: inline;
+    margin-bottom: 20px;
+  }
+  .author h2 {
+    margin-bottom: 10px;
+  }
+  /* End: About Page */
+
+  /* Start: About Reviewers */
+  #aboutReviewer {
+    width: 390px;
+  }
+
+  .reviewer-container {
+    display: inline;
+  }
+  .reviewer-container h1 {
+    font-size: 32px;
+    margin-top: 50px;
+  }
+  .aboutImage {
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    margin: auto;
+  }
+
+  .container-reviewer {
+    display: inline;
+  }
+
+  .box {
+    display: inline;
+  }
+
+  .box1 p {
+    display: inline;
+    margin: 20px;
+  }
+
+  .box2 p {
+    width: fit-content;
+  }
+  /* Start: About Reviewers */
+
+  /* Start: Contact */
+  .post {
+    margin-top: 70px;
+  }
+  .blog-text textarea {
+    max-width: 333px;
+  }
+  /* End: Contact */
+
+  /* Start: Review */
+  .bookReview {
+    display: inline;
+    margin: 20px;
+  }
+  /* End: Review */
+
+  /* Start: Full Book Review */
+  #bookreview1 {
+    width: 390px;
+  }
+  .comment {
+    display: inline;
+  }
+  /* End: Full Book Review */
+
+  /* Start: Login Page */
+  .account-container {
+    max-width: 347px;
+  }
+  /* End: Login Page */
+}
+
+@media (max-width: 870px) {
+  /*Start: Hamburger Menu  */
+  .hamburger {
+    display: block;
+    position: fixed;
+    margin-top: 20px;
+    margin-left: -48px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+  }
+
+  .nav-links {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-menu {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 79px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 10;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+  .navigation-bar {
+    position: fixed;
+    top: 0;
+    margin: 0;
+  }
+  /* .navigation-bar {
+        margin: 0px;
+      } */
+}
+/*End: Hamburger Menu  */
+
+@media screen and (max-width: 890px) {
+  /* Start: Home Page */
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    flex-direction: row;
+    height: auto;
+    margin-bottom: 100px;
+    margin: 20px;
+  }
+  .top {
+    display: inline;
+    width: auto;
+    height: auto;
+    margin: 0pc 20px;
+  }
+
+  .info {
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info p {
+    text-align: center;
+  }
+
+  .info h2 {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+  }
+  .description {
+    max-width: 650px;
+  }
+
+  .container-box {
+    padding: 5px;
+    text-align: center;
+    height: 400px;
+  }
+  /* End: Home Page */
+}
+
+/* @media screen and (max-width: 1050px) {
+  Start: Blogs
+
+  .image img {
+    width: 726px;
+    height: 494px;
+  }
+  .top {
+    display: inline;
+    width: auto;
+    height: auto;
+    margin: 0pc 20px;
+  }
+  .info {
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info p {
+    text-align: center;
+  }
+  .description button {
+    float: right;
+  }
+
+  .info h2 {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    flex-direction: row;
+    height: auto;
+    margin-bottom: 60px;
+  }
+
+  .blog-img {
+    display: block;
+    width: 391px;
+    height: 307px;
+  }
+
+  .container-box h3 {
+    margin-top: 20px;
+    max-width: 300px;
+    text-align: center;
+  } */
+
+/* End: Blog
+
+  Start: About Reviewer
+  .box {
+    display: inline;
+  }
+  .box1 p {
+    text-align: center;
+    margin: 0px 130px;
+  }
+  .box2 {
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .box3 ul {
+    text-align: center;
+  }
+  End: About Reviewer
+} */
+
+/* @media screen and (max-width: 1393px) {
+  Start: Blogs
+  .top {
+    margin: 0pc 20px;
+  }
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    margin-top: 5%;
+  }
+  End: Blog
+
+  Start: About 
+  .author-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+  }
+  End: About
+} */

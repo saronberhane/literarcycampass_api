@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <!-- icon at the tab of page -->
+    <link rel="icon" type="images/x-icon" href="/Images/logo/BlogLogo1.png">
+
+    <!-- linking the styles css page to this -->
+    <link rel="stylesheet" href="/views/styles/styles.css">
+    <link rel="stylesheet" href="/views/styles/commonStyles.css">
+
+    <!-- linking the responsive css page to this -->
+    <link rel="stylesheet" href="/views/styles/responsive.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <!-- connecting the javascript -->
+    <script src="script.js"></script>
+
+    <!-- Include Mustache JS framework -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js"></script>
+
+
+</head>
+
+  <body>
+     <!-- Start: Nav-bar -->
+     <header class="header">
+      <div class="header">
+          <div class="logo"> 
+              <a href="index.html"><img src="/Images/logo/BlogLogo1.png" alt="logo"></a>    
+          </div>
+
+          <nav class="primary-nav">
+              <ul class="nav-menu">
+                  <li class="nav-item"><a href="index.html"> Home </a></li>
+                  <li class="nav-item"><a href="about.html"> About </a></li>
+                  <li class="nav-item"><a href="contact.html">Contact </a> </li>
+                  <li class="nav-item"><a href="review.html"> Review </a></li>
+                  <li class="nav-item"><a href="login.html"> Login </a></li>
+                  <a> 
+                      <form class="search" role="search">
+                          <label>
+                              <input type="search"/>
+                          </label>
+                          <button type="submit">Submit</button>
+                      </form>
+                  </a>    
+              </ul>  
+
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+          </nav>   
+      </div>
+  </header>
+<!-- End: Nav-bar -->
+
+    <!-- Start: Login -->
+    <section>
+      <div class="account-container">
+        <h1>Login</h1>
+        <form action="">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Log In</button>
+        </form>
+        <p>
+          Don't have an account? <a href="create-account.html">Create one</a>.
+        </p>
+      </div>
+    </section>
+    <!-- End: login -->
+
+    <!-- Start: Footer -->
+    <footer class="foot">
+      <hr />
+      <br />
+      <br />
+      <div class="footer">
+        <div class="info">
+          <h4>saronberhanee@gmail.com</h4>
+          <h4>(832) 863-4085</h4>
+        </div>
+        <ul class="social">
+          <li>
+            <a href="tel:8328634085"><i class="fa fa-phone"></i></a>
+          </li>
+          <li>
+            <a href="mailto:saronberhanee@gmail.com"
+              ><i class="fa fa-envelope"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/saron-berhanee/" target="blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <br />
+      <br />
+      <!-- <hr> -->
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Saron Berhane. All Right Reserved.</p>
+      </div>
+    </footer>
+    <!-- End: Footer -->
+
+    <script src="/views/javascript/script.js"></script>
+  </body>
+</html>

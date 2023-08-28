@@ -124,7 +124,7 @@ module.exports.viewProfile = async (req, res, next) => {
       data: { user: user },
     });
   } catch (error) {
-    next(error);
+    next(error); 
   }
 };
 

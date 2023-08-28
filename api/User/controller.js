@@ -112,6 +112,11 @@ module.exports.viewProfile = async (req, res, next) => {
       .populate({
         path: "favorite_books",
         select: "title about cover_url price Date no_of_page language",
+      })
+      .populate({
+        path: "followers",
+        select: `-password -picture_pub_id -email -is_active -followers
+         -following_readers -following_authors -reviews -favorite_books -role -updatedAt`,
       });
 
     res.status(201).json({
@@ -130,7 +135,7 @@ module.exports.viewReaderProfile = async (req, res, next) => {
 
     //search
     const user = await UserModel.findById(id)
-      .select("-password -updatedAt -role -is_active -picture_pub_id -reviews")
+      .select("-password -email -updatedAt -role -is_active -picture_pub_id -reviews")
       .populate({
         path: "following_readers",
         select: `-password -picture_pub_id -email -is_active -followers
@@ -143,6 +148,11 @@ module.exports.viewReaderProfile = async (req, res, next) => {
       .populate({
         path: "favorite_books",
         select: "title about cover_pub_id price Date no_of_page language",
+      })
+      .populate({
+        path: "followers",
+        select: `-password -picture_pub_id -email -is_active -followers
+         -following_readers -following_authors -reviews -favorite_books -role -updatedAt`,
       });
 
     res.status(201).json({
@@ -208,6 +218,11 @@ module.exports.addBookToFavorite = async (req, res, next) => {
     .populate({
       path: "favorite_books",
       select: "title about cover_pub_id price Date no_of_page language",
+    })
+    .populate({
+      path: "followers",
+      select: `-password -picture_pub_id -email -is_active -followers
+       -following_readers -following_authors -reviews -favorite_books -role -updatedAt`,
     });
 
     res.status(201).json({
@@ -252,6 +267,11 @@ module.exports.removeBookFromFavorite = async (req, res, next) => {
     .populate({
       path: "favorite_books",
       select: "title about cover_pub_id price Date no_of_page language",
+    })
+    .populate({
+      path: "followers",
+      select: `-password -picture_pub_id -email -is_active -followers
+       -following_readers -following_authors -reviews -favorite_books -role -updatedAt`,
     });
 
     res.status(201).json({
@@ -298,6 +318,11 @@ module.exports.updateAccount = async (req, res, next) => {
       .populate({
         path: "following_authors",
         select: "full_name picture_url about followers",
+      })
+      .populate({
+        path: "followers",
+        select: `-password -picture_pub_id -email -is_active -followers
+         -following_readers -following_authors -reviews -favorite_books -role -updatedAt`,
       });
 
     res.status(201).json({
@@ -332,13 +357,22 @@ module.exports.followReader = async (req, res, next) => {
     }
 
     //search
-    const user = await UserModel.findByIdAndUpdate(
+    await UserModel.findByIdAndUpdate(
       currentUser._id,
       { $push: { following_readers: id } },
       { new: true }
-    ).select("-password")
+    );
+
+    const user = await UserModel.findByIdAndUpdate(id, {
+      $push: { followers: currentUser._id } 
+    }).select("-password")
     .populate({
       path: "following_readers",
+      select: `-password -picture_pub_id -email -is_active -followers
+       -following_readers -following_authors -reviews -favorite_books -role -updatedAt`,
+    })
+    .populate({
+      path: "followers",
       select: `-password -picture_pub_id -email -is_active -followers
        -following_readers -following_authors -reviews -favorite_books -role -updatedAt`,
     })
@@ -398,6 +432,11 @@ module.exports.unFollowReader = async (req, res, next) => {
     .populate({
       path: "favorite_books",
       select: "title about cover_pub_id price Date no_of_page language",
+    })
+    .populate({
+      path: "followers",
+      select: `-password -picture_pub_id -email -is_active -followers
+       -following_readers -following_authors -reviews -favorite_books -role -updatedAt`,
     });
 
     res.status(201).json({
@@ -447,6 +486,11 @@ module.exports.unFollowAuthor = async (req, res, next) => {
     .populate({
       path: "favorite_books",
       select: "title about cover_pub_id price Date no_of_page language",
+    })
+    .populate({
+      path: "followers",
+      select: `-password -picture_pub_id -email -is_active -followers
+       -following_readers -following_authors -reviews -favorite_books -role -updatedAt`,
     });
 
     res.status(201).json({

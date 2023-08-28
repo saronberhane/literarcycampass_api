@@ -66,7 +66,7 @@ exports.rateBook = async (req, res, next) => {
             return next(new AppError("You have already given a rate for this book!", 404))
         }
 
-        await Rate.create({
+        const newRate = await Rate.create({
             user_id: user.id,
             book_id: bookId,
             amount: rate
@@ -89,7 +89,7 @@ exports.rateBook = async (req, res, next) => {
         res.status(200).json({
             status: "SUCCESS",
             message: `Book rated successfuly!!!`,
-            data: {book}
+            data: {newRate}
         });
 
     } catch (error) {

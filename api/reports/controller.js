@@ -144,6 +144,10 @@ exports.getReport = async (req, res, next) => {
       path:"book_id",
       select: "title"
   })
+  .populate({
+      path:"review_id",
+      select: "review_message"
+  })
     
     if (!existsingReview) {
       return next(new AppError("No report found.", 404));

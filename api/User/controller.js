@@ -135,7 +135,7 @@ module.exports.viewReaderProfile = async (req, res, next) => {
 
     //search
     const user = await UserModel.findById(id)
-      .select("-password -email -updatedAt -role -is_active -picture_pub_id -reviews")
+      .select("-password -updatedAt -role -is_active -picture_pub_id -reviews")
       .populate({
         path: "following_readers",
         select: `-password -picture_pub_id -email -is_active -followers
